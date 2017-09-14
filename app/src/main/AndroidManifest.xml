@@ -9,18 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".quality_control" />
-        <activity android:name=".quality_control_2" />
-        <activity android:name=".quality_control_3" />
-        <activity android:name=".security" />
-        <activity android:name=".focused_improv"></activity>
+        <activity android:name=".quality_control"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".quality_control_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".quality_control_3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".security"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".focused_improv"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

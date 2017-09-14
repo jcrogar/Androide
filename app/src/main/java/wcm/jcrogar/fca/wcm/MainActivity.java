@@ -11,7 +11,7 @@ import java.security.Security;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton btnQualitySgt;
-
+    ImageButton btnFocusedSgt;
     ImageButton btnSecuritySgt;
 
 
@@ -21,7 +21,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnSecuritySgt = (ImageButton) findViewById(R.id.btnSecurity);
         btnQualitySgt = (ImageButton) findViewById(R.id.btnQuality);
+        btnFocusedSgt = (ImageButton) findViewById(R.id.btnFocused);
 
+        btnFocusedSgt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentF = new Intent(MainActivity.this, focused_improv.class);
+                startActivity(intentF);
+            }
+        });
 
         btnQualitySgt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
+
 
 
     }
