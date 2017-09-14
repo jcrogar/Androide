@@ -5,25 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context="wcm.jcrogar.fca.wcm.focused_improv">
+    tools:context="wcm.jcrogar.fca.wcm.cost_deployment">
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textCost"
         android:layout_width="405dp"
         android:layout_height="115dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@android:color/holo_orange_light"
+        android:contextClickable="false"
         android:gravity="center_vertical|center_horizontal"
-
-        android:text="Focused Improvement"
+        android:text="Cost Deployment"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>
