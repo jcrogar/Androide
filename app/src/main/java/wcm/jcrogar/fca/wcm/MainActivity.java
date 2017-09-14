@@ -10,10 +10,8 @@ import android.widget.ImageButton;
 import java.security.Security;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnQualitySgt;
-    ImageButton btnCostDeploymentSgt;
-    ImageButton btnAmbientalSgt;
-    ImageButton btnFocusedImprovmentSgt;
+    ImageButton btnQualitySgt;
+
     ImageButton btnSecuritySgt;
 
 
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnSecuritySgt = (ImageButton) findViewById(R.id.btnSecurity);
-        btnQualitySgt = (Button)findViewById(R.id.btnQuality);
+        btnQualitySgt = (ImageButton) findViewById(R.id.btnQuality);
 
 
         btnQualitySgt.setOnClickListener(new View.OnClickListener() {
