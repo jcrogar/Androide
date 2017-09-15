@@ -11,14 +11,13 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="405dp"
+        android:layout_width="0dp"
         android:layout_height="115dp"
-        android:layout_marginTop="-9dp"
+        android:layout_marginTop="0dp"
         android:background="@android:color/holo_green_light"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Security"
+        android:text="Safety"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_light"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.0"
