@@ -8,6 +8,47 @@
     tools:context="wcm.jcrogar.fca.wcm.people_development">
 
     <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objetivo"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Educar, Entrenar y nutrir a la ente para materializar el WCM, ya que el exito de lograrlo depende de las personas."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mision"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="343dp"
+        android:layout_height="142dp"
+        android:gravity="left|center_vertical"
+        android:text="Obtener el compromiso de todos los que trabajamos en complejo Toluca para desarrollar los conocimientos y as habilidades requeridas para atacar todas las perdidas a traves de eliminar el error humano."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <TextView
         android:id="@+id/textView21"
         android:layout_width="0dp"
         android:layout_height="115dp"
@@ -23,4 +64,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnPeopleD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#FF66CC"
+        android:text="7 Pasos"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="483dp" />
 </android.support.constraint.ConstraintLayout>

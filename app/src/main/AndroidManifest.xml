@@ -39,7 +39,10 @@
         <activity android:name=".logistics" />
         <activity android:name=".environment" />
         <activity android:name=".equipment_management" />
-        <activity android:name=".people_development"></activity>
+        <activity android:name=".people_development" />
+        <activity android:name=".security_seven" />
+        <activity android:name=".security_acts" />
+        <activity android:name=".cost_seven"></activity>
     </application>
 
 </manifest>
