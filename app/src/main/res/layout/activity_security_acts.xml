@@ -73,23 +73,38 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="0dp"
-        android:layout_height="115dp"
-        android:background="@android:color/holo_green_light"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="Safety"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="332dp"
+                android:layout_height="91dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView49"
+                app:layout_constraintLeft_toLeftOf="@+id/textView49"
+                app:layout_constraintRight_toRightOf="@+id/textView49"
+                app:layout_constraintTop_toTopOf="@+id/textView49"
+                app:srcCompat="@drawable/safety_logo" />
 
             <TextView
                 android:id="@+id/textView51"

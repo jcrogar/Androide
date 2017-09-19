@@ -17,13 +17,13 @@
         android:text="Uso obligatorio del equipo de proteccion"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="7dp"
         app:layout_constraintTop_toBottomOf="@+id/textView47"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.977" />
 
     <TextView
         android:id="@+id/textView20"
@@ -35,13 +35,14 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="-5dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -84,7 +85,7 @@
         android:layout_marginTop="25dp"
         android:text="Ninguna lesion para nuestros trabajadores"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_constraintLeft_creator="1"
@@ -99,7 +100,7 @@
         android:layout_marginTop="25dp"
         android:text="Crear una cultura de seguridadd encaminada de manera proactiva en todos los niveles de la organizacion"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33"
         tools:layout_constraintLeft_creator="1"
@@ -115,10 +116,10 @@
         android:text="7 Pasos"
         android:textAppearance="@android:style/TextAppearance.Widget.Button"
         android:textStyle="bold"
-        android:layout_marginTop="76dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView67"
-        android:layout_marginLeft="38dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btnSecurityActs"
@@ -130,9 +131,35 @@
         android:text="Actos"
         android:textAppearance="@android:style/TextAppearance.Widget.Button"
         android:textStyle="bold"
-        android:layout_marginTop="76dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView67"
         app:layout_constraintLeft_toRightOf="@+id/btnSecuritySeven"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/textView47"
+        app:srcCompat="@drawable/safety2"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="332dp"
+        android:layout_height="91dp"
+        android:background="@android:color/white"
+        app:srcCompat="@drawable/safety_logo"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/textView20"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

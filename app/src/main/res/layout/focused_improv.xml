@@ -11,10 +11,10 @@
         android:id="@+id/scrollView7"
         android:layout_width="387dp"
         android:layout_height="565dp"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="1dp">
 
         <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -51,7 +51,6 @@
                 android:background="@android:color/holo_blue_light"
                 android:gravity="center_vertical|center_horizontal"
 
-                android:text="Focused Improvement"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -109,6 +108,23 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="332dp"
+                android:layout_height="91dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.625"
+                app:srcCompat="@drawable/focused_improv" />
 
             <Button
                 android:id="@+id/button7"
