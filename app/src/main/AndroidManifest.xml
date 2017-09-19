@@ -42,7 +42,18 @@
         <activity android:name=".people_development" />
         <activity android:name=".security_seven" />
         <activity android:name=".security_acts" />
-        <activity android:name=".cost_seven"></activity>
+        <activity android:name=".cost_seven" />
+        <activity android:name=".cost_perdidas" />
+        <activity android:name=".focused_seven" />
+        <activity android:name=".autono_seven" />
+        <activity android:name=".autono_cilr" />
+        <activity android:name=".prfessionalm_seven" />
+        <activity android:name=".quality_control_seven" />
+        <activity android:name=".logistics_seven" />
+        <activity android:name=".environment_seven" />
+        <activity android:name=".environment_rs" />
+        <activity android:name=".equipment_seven" />
+        <activity android:name=".people_development_seven"></activity>
     </application>
 
 </manifest>

@@ -13,19 +13,24 @@
         android:layout_height="wrap_content"
         android:text="Objetivo"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView95"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="356dp"
+        android:layout_height="95dp"
         android:text="Educar, Entrenar y nutrir a la ente para materializar el WCM, ya que el exito de lograrlo depende de las personas."
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView94"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView96"
@@ -33,20 +38,25 @@
         android:layout_height="wrap_content"
         android:text="Mision"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView95"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView97"
-        android:layout_width="343dp"
-        android:layout_height="142dp"
+        android:layout_width="344dp"
+        android:layout_height="153dp"
         android:gravity="left|center_vertical"
         android:text="Obtener el compromiso de todos los que trabajamos en complejo Toluca para desarrollar los conocimientos y as habilidades requeridas para atacar todas las perdidas a traves de eliminar el error humano."
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="310dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView96"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView21"
@@ -66,12 +76,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/BtnPeopleD"
+        android:id="@+id/btnPeople"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:background="@android:drawable/editbox_background_normal"
         android:backgroundTint="#FF66CC"
         android:text="7 Pasos"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="483dp" />
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
 </android.support.constraint.ConstraintLayout>

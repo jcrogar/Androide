@@ -9,6 +9,7 @@ import android.widget.Button;
 public class quality_control_2 extends AppCompatActivity {
     Button btnQualityM;
     Button btnQualityN;
+    Button btnQualitySgt;
 
 
     @Override
@@ -17,6 +18,14 @@ public class quality_control_2 extends AppCompatActivity {
         setContentView(R.layout.quality_control_2);
         btnQualityM = (Button) findViewById(R.id.btnQualityM);
         btnQualityN = (Button) findViewById(R.id.btnQualityN);
+        btnQualitySgt = (Button) findViewById(R.id.btnQualitySeven);
+        btnQualitySgt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent innerSeven = new Intent(quality_control_2.this, quality_control_seven.class);
+                startActivity(innerSeven);
+            }
+        });
 
         btnQualityM.setOnClickListener(new View.OnClickListener() {
             @Override
