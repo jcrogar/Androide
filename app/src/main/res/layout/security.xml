@@ -92,18 +92,18 @@
 
     <TextView
         android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_width="303dp"
+        android:layout_height="79dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
-        android:text="Crear una cultura de seguridadd encaminada de manera proactiva en todos los niveles de la organizacion"
+        android:layout_marginTop="8dp"
+        android:text="Crear una cultura de seguridad encaminada de manera proactiva en todos los niveles de la organizacion"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/btnSecuritySeven"

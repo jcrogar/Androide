@@ -94,14 +94,14 @@
         android:id="@+id/btnEnvRs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="24dp"
         android:background="@android:drawable/editbox_background_normal"
         android:backgroundTint="@android:color/holo_blue_light"
         android:text="5R's"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@+id/btnenvSeven"
-        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnenvSeven"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -117,4 +117,15 @@
         app:layout_constraintLeft_toLeftOf="@+id/textView23"
         app:layout_constraintBottom_toBottomOf="@+id/textView23"
         android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="210dp"
+        android:layout_height="167dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mundi"
+        app:layout_constraintLeft_toRightOf="@+id/btnenvSeven"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
 </android.support.constraint.ConstraintLayout>

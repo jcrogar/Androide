@@ -53,7 +53,8 @@
         <activity android:name=".environment_seven" />
         <activity android:name=".environment_rs" />
         <activity android:name=".equipment_seven" />
-        <activity android:name=".people_development_seven"></activity>
+        <activity android:name=".people_development_seven" />
+        <activity android:name=".info_wcm"></activity>
     </application>
 
 </manifest>

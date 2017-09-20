@@ -7,13 +7,95 @@
     android:background="@color/colorAccent"
     tools:context="wcm.jcrogar.fca.wcm.cost_perdidas">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/textView139"
+        android:layout_width="322dp"
+        android:layout_height="101dp"
+        android:gravity="left"
+        android:text="Es un tipo particular de perdida que se genera en la produccion cuando se utilizan mas recursos (Mano de obra, materiales, equipo de produccion, energia) de los estrictamente necesarios."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView138"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/textView138"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_vertical|center"
+        android:text="Desperdicio"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36" />
+
+    <TextView
+        android:id="@+id/textView137"
+        android:layout_width="328dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Una perdida es el uso de cualquier recurso (mano de obra, materiales, equipo de produccion, energia) a la que esta asociada un costo, que no añade valor al cliente. "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView129"
+        android:layout_marginStart="18dp"
+
+        android:layout_marginLeft="26dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView129"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_vertical|center"
+        android:text="Perdida"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
     <TextView
         android:id="@+id/textView102"
         android:layout_width="0dp"
         android:layout_height="115dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
         android:background="@android:color/holo_orange_light"
         android:contextClickable="false"
         android:gravity="center_vertical|center_horizontal"
@@ -39,5 +121,44 @@
         app:layout_constraintTop_toTopOf="@+id/textView102"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView102"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="164dp"
+        android:layout_height="97dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/costos_graf_2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView137"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="164dp"
+                android:layout_height="97dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView139"
+                app:srcCompat="@drawable/cstos_foco" />
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

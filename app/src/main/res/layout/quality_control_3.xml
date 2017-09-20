@@ -31,20 +31,18 @@
 
             <TextView
                 android:id="@+id/textView27"
-                android:layout_width="352dp"
-                android:layout_height="48dp"
+                android:layout_width="330dp"
+                android:layout_height="79dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:text="-Localiza las AREAS mas CRITICAS del complejo."
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintHorizontal_bias="0.473"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+                app:layout_constraintTop_toBottomOf="@+id/textView30"
+                android:layout_marginTop="0dp" />
 
             <TextView
                 android:id="@+id/textView30"
@@ -52,20 +50,19 @@
                 android:layout_height="66dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:text="-Da seguimiento a los proyectos DE MEJORA  (KAIZENES) que se crean para solucionar  problemas."
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+                app:layout_constraintTop_toBottomOf="@+id/textView29"
+                android:layout_marginTop="0dp" />
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="351dp"
-                android:layout_height="41dp"
+                android:layout_width="304dp"
+                android:layout_height="53dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -74,18 +71,18 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintHorizontal_bias="0.529"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                android:layout_marginTop="0dp"
+                app:layout_constraintHorizontal_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView28"
-                android:layout_width="351dp"
-                android:layout_height="41dp"
+                android:layout_width="330dp"
+                android:layout_height="51dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="2dp"
                 android:text="-Organizar todos los problemas de calidad en  un solo documento."
@@ -93,7 +90,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <TextView
@@ -128,7 +124,6 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="-1dp"
                 app:layout_constraintHorizontal_bias="0.0" />
 
             <TextView
@@ -156,35 +151,37 @@
         android:layout_marginLeft="11dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="16dp"
         android:text="¿Que es?"
 
         android:textColor="@android:color/white"
         android:textColorHighlight="@color/colorAccent"
         android:textSize="19sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         android:layout_marginEnd="8dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="156dp"
-        android:layout_height="33dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="13dp"
-        android:text="QA MATRIX"
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="31dp"
 
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        android:layout_marginEnd="8dp" />
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="QA MATRIX"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <TextView
                 android:id="@+id/textView34"
@@ -229,7 +226,8 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView35"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp" />
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp" />
 
             <TextView
                 android:id="@+id/textView39"
@@ -264,19 +262,20 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView39"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp" />
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="0dp"
                 android:layout_height="58dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="left"
-                android:text="Representa el costo por reemplazar la parte donde se necesita corregir algun defecto. Costo por usar otro material ddurante la reparacion."
+                android:text="Representa el costo por reemplazar la parte donde se necesita corregir algun defecto. Costo por usar otro material durante la reparacion."
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 app:layout_constraintHorizontal_bias="0.6"
@@ -299,14 +298,15 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView41"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp" />
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp" />
 
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="0dp"
                 android:layout_height="43dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -324,7 +324,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="-1dp"
                 android:gravity="left"
                 android:text="SEVERIDAD"
                 android:textColor="@android:color/white"
@@ -340,7 +339,7 @@
                 android:layout_width="0dp"
                 android:layout_height="43dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="4dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -368,7 +367,9 @@
                 app:layout_constraintRight_toRightOf="@+id/textView12"
                 app:layout_constraintTop_toTopOf="@+id/textView12"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/quality_contol" />
+                app:srcCompat="@drawable/quality_contol"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
 
 

@@ -343,7 +343,7 @@
             <TextView
                 android:id="@+id/textView57"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="70dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -351,7 +351,7 @@
                 android:layout_marginTop="8dp"
                 android:background="#339900"
                 android:gravity="center"
-                android:text="Logistica y Servicio al cliente "
+                android:text="Garantizar un arranque vertical de los nuevos equipos. "
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"

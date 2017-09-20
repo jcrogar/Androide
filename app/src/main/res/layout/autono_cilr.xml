@@ -11,9 +11,6 @@
         android:id="@+id/textView105"
         android:layout_width="0dp"
         android:layout_height="115dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
         android:background="@android:color/holo_purple"
         android:gravity="center_vertical|center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -37,5 +34,54 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/textView105"
         app:layout_constraintBottom_toBottomOf="@+id/textView105"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <TextView
+        android:id="@+id/textView139"
+        android:layout_width="168dp"
+        android:layout_height="248dp"
+        android:gravity="left"
+        android:text="Un ciclo estandar de Mantenimiento Autonomo es un documento que tiene las instrucciones para hacer una actividad de limpieza, inspeccion, Lubricacion, o Reapriete programada en el calendario AM."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView138"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView138"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center_vertical|center"
+        android:text="Ciclos Estandar CILR"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="160dp"
+        android:layout_height="205dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/service_am"
+        app:layout_constraintLeft_toRightOf="@+id/textView139"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView138" />
+
+
 </android.support.constraint.ConstraintLayout>

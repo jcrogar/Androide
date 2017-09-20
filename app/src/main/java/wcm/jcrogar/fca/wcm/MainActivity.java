@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btnEnvironmentSgt;
     ImageButton btnEquipmentSgt;
     ImageButton btnPeopleSgt;
+    ImageButton btnwcmSgt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnwcmSgt = (ImageButton)findViewById(R.id.btnWcm);
         btnSecuritySgt = (ImageButton) findViewById(R.id.btnSecurity);
         btnQualitySgt = (ImageButton) findViewById(R.id.btnQuality);
         btnFocusedSgt = (ImageButton) findViewById(R.id.btnFocused);
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
         btnEnvironmentSgt = (ImageButton) findViewById(R.id.btnEnviroment);
         btnEquipmentSgt = (ImageButton) findViewById(R.id.btnEquipment);
         btnPeopleSgt = (ImageButton) findViewById(R.id.btnPeople);
+
+        btnwcmSgt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intenWcm = new Intent(MainActivity.this, info_wcm.class);
+                startActivity(intenWcm);
+            }
+        });
 
         btnPeopleSgt.setOnClickListener(new View.OnClickListener() {
             @Override

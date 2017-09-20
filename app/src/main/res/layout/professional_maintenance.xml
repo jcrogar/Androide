@@ -9,34 +9,34 @@
 
     <TextView
         android:id="@+id/textView85"
-        android:layout_width="349dp"
-        android:layout_height="117dp"
+        android:layout_width="348dp"
+        android:layout_height="111dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
         android:text='Crear una cultura de "Cero Paros" por medio de acciones efectivas contra las causas raices y de un entrenamiento constante de nuestros colaboradores.'
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView83"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
     <TextView
         android:id="@+id/textView84"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:text='Hacer bien el mantenimiento "Cero Paros Maquina"'
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView76"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
     <TextView
         android:id="@+id/textView83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Objetivo"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -79,10 +79,10 @@
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="7 Pasos"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView85"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toRightOf="@+id/imageView41"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView85" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -98,4 +98,16 @@
         app:layout_constraintLeft_toLeftOf="@+id/textView22"
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="230dp"
+        android:layout_height="116dp"
+
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/focused_improv2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView85"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
