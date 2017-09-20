@@ -29,9 +29,9 @@
         android:id="@+id/textView20"
         android:layout_width="0dp"
         android:layout_height="115dp"
+        android:layout_marginTop="-5dp"
         android:background="@android:color/holo_green_light"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Safety"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -41,8 +41,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="-5dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/textView2"
@@ -97,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="22dp"
         android:text="Crear una cultura de seguridadd encaminada de manera proactiva en todos los niveles de la organizacion"
         android:textColor="@android:color/white"
         android:textSize="16sp"

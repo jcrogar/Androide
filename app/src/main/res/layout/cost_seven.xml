@@ -7,6 +7,30 @@
     android:background="@color/colorAccent"
     tools:context="wcm.jcrogar.fca.wcm.cost_seven">
 
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="387dp"
+        android:layout_height="565dp"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="vertical">
+
+
+
+
     <TextView
         android:id="@+id/textView66"
         android:layout_width="0dp"
@@ -40,5 +64,339 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView66"
         android:layout_marginBottom="8dp" />
+
+       <!--Aqui empieza PRB -->
+            <!--Paso1-->
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Paso 1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            <!--flecha1-->
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView58"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView59"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" />
+
+            <!--Paso2-->
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Paso 2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/textView59"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+            <!--flecha2-->
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView59"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+
+            <!--Paso 4-->
+            <TextView
+                android:id="@+id/textView117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paso 4"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                app:layout_constraintRight_toLeftOf="@+id/textView60"
+                android:layout_marginRight="16dp" />
+
+            <!--Paso3-->
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Paso 3"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+
+            <!--flecha-->
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView61"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+            <!--flecha-->
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView60"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+            <!--paso5-->
+            <TextView
+                android:id="@+id/textView115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paso 5"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:layout_constraintRight_toLeftOf="@+id/textView62"
+                android:layout_marginRight="16dp" />
+
+
+            <!--flecha-->
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView62"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+            <!--flecha-->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView63"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+            <!--Paso6-->
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Paso 6"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <!--Paso 6-->
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Estimar los costos de la mejora y la reduccion de perdidas y desperdicios."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.868"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+            <!--Paso 7 -->
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="120dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:text="Establecer e implementar el plan de mejora y comenzar nuevamente desde el paso 4."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+            <!--Paso 3-->
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Separar las perdidas causales de las resultantes."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.68"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+            <!--Paso 4-->
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="120dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Calcular los costos de perdidas y desperdicios."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.735"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+            <!--Paso 5-->
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="120dp"
+                android:layout_height="94dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Identificar los metodos para la recuperacion de perdidas y desperdicios."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView63"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.834" />
+
+            <!--Paso 1-->
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="151dp"
+                android:layout_height="195dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Cuantificar los costos totales por departamento, asignar objetivos de reduccion de costos, conocer los costos totales de transformacion por proceso."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.639"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+            <!--Paso 2-->
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="162dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Identificar cualitativamente perdidas y desperdicios, cuantificar las perdidas y los desperdicios en funcion de las mediciones realizadas."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.745"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+            <!--Flecha-->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarillo"
+                app:layout_constraintRight_toLeftOf="@+id/textView64"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+            <!--Paso7-->
+            <TextView
+                android:id="@+id/textView113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:text="Paso 7"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Correcto Registro de Informacion"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

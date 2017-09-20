@@ -15,7 +15,6 @@
         android:layout_height="115dp"
         android:background="@android:color/holo_red_light"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Quality Control"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -101,5 +100,20 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="332dp"
+        android:layout_height="91dp"
+        android:background="@android:color/white"
+        app:srcCompat="@drawable/quality_contol"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/textView25"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView25"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        android:layout_marginBottom="8dp" />
 
 </android.support.constraint.ConstraintLayout>

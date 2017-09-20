@@ -16,7 +16,6 @@
         android:layout_marginTop="0dp"
         android:background="@android:color/darker_gray"
         android:gravity="center_vertical|center_horizontal"
-        android:text="Logistics"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -89,4 +88,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView89"
         android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="332dp"
+        android:layout_height="91dp"
+        android:background="@android:color/white"
+        app:srcCompat="@drawable/logistics"
+        app:layout_constraintTop_toTopOf="@+id/textView31"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/textView31"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView31"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        android:layout_marginBottom="8dp" />
 </android.support.constraint.ConstraintLayout>
