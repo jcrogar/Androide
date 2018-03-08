@@ -79,7 +79,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="19dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="#3366CC"
         android:gravity="center"
         android:text="Definiciones"
         android:textColor="@android:color/white"

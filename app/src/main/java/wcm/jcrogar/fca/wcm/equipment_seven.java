@@ -10,4 +10,7 @@ public class equipment_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.equipment_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

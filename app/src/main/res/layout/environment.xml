@@ -9,16 +9,19 @@
 
     <TextView
         android:id="@+id/textView98"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#3366CC"
+        android:gravity="center_horizontal"
         android:text="Objetivo"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/textView99"
@@ -30,20 +33,27 @@
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textView98"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/textView100"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#3366CC"
+        android:gravity="center_horizontal"
         android:text="Mision"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView99"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <TextView
         android:id="@+id/textView101"
@@ -56,29 +66,29 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+        app:layout_constraintTop_toBottomOf="@+id/textView100"
+        android:layout_marginStart="16dp" />
 
     <Button
         android:id="@+id/btnenvSeven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:background="@android:drawable/editbox_background_normal"
         android:backgroundTint="@android:color/holo_blue_light"
         android:elevation="0dp"
         android:text="7 Pasos"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView101"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="0dp"
         android:layout_height="115dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
         android:background="#3366CC"
         android:gravity="center_vertical|center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -94,14 +104,16 @@
         android:id="@+id/btnEnvRs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:background="@android:drawable/editbox_background_normal"
         android:backgroundTint="@android:color/holo_blue_light"
         android:text="5R's"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnenvSeven"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnenvSeven" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -116,16 +128,19 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/textView23"
         app:layout_constraintBottom_toBottomOf="@+id/textView23"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <ImageView
         android:id="@+id/imageView45"
-        android:layout_width="210dp"
-        android:layout_height="167dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mundi"
+        android:layout_width="209dp"
+        android:layout_height="129dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
         app:layout_constraintLeft_toRightOf="@+id/btnenvSeven"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+        app:layout_constraintTop_toBottomOf="@+id/textView101"
+        app:srcCompat="@drawable/eco"
+        android:layout_marginStart="11dp" />
 </android.support.constraint.ConstraintLayout>

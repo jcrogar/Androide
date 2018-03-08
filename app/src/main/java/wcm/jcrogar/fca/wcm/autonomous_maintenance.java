@@ -14,8 +14,8 @@ public class autonomous_maintenance extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.autonomous_maintenance);
-        btnAutoSgt = (Button)findViewById(R.id.btnAutonomousSeven);
-        btnCILRSgt = (Button)findViewById(R.id.btnAutoCILR);
+        //btnAutoSgt = (Button)findViewById(R.id.btnSeven);
+        //btnCILRSgt = (Button)findViewById(R.id.btnObjetivos);
 
         btnAutoSgt.setOnClickListener(new View.OnClickListener() {
             @Override

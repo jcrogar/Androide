@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="wcm.jcrogar.fca.wcm.security_politicas">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textView154"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="Fiat Chrysler Automobiles (FCA) NAFTA está comprometido en crear un sistema de gestión de clase mundial en medio ambiente, energía, salud ocupacional y seguridad (SO y S), el cual, se esfuerza en proveer la mejora continua, proteger al medio ambiente, prevenir la contaminación, en lograr mejoras en el desempeño energetico y prevenir lesiones y enfermedades en el trabajo."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView153" />
+
+            <TextView
+                android:id="@+id/textView153"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="#9CFA06"
+                android:gravity="center"
+                android:text="Politicas E2HS"
+                android:textColor="#37372B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:background="#9CFA06"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/textView155"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="#9CFA06"
+                android:gravity="center"
+                android:text="FCA se compromete a:"
+                android:textColor="#37372B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="332dp"
+                android:layout_height="91dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView68"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView68"
+                app:srcCompat="@drawable/safety_logo" />
+
+            <TextView
+                android:id="@+id/textView156"
+                android:layout_width="324dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="Cumplir con los requerimientos aplicables relacionados a los aspectos ambientales, riesgos de saludo ocupacional y seguridad, asi como el consumo y uso eficiente de la energía."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView155"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.55" />
+
+            <TextView
+                android:id="@+id/textView157"
+                android:layout_width="328dp"
+                android:layout_height="126dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="Lograr los objetivos y metas de ambiente, salud ocupacional, seguridad y energía, incluyendo el garantizar la disponibilidad de la información y recursos necesarios."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView156" />
+
+            <TextView
+                android:id="@+id/textView158"
+                android:layout_width="328dp"
+                android:layout_height="105dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="Comprar productos y servicios eficientes en el uso de energía y diseñar para la mejora en el desempeño energético."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+            <TextView
+                android:id="@+id/textView159"
+                android:layout_width="328dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="Practicar los principios de sustentabilidad."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView158" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

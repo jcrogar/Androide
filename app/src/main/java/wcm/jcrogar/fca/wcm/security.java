@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class security extends AppCompatActivity {
-    Button btnSecuritySeven;
-    Button btnSecurityActs;
+    Button btnActos;
+    Button btnObjetivos;
+    Button btnPasos;
+    Button btnPoliticas;
 
 
 
@@ -16,27 +18,49 @@ public class security extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.security);
-        btnSecuritySeven = (Button) findViewById(R.id.btnSecuritySeven);
-        btnSecurityActs = (Button) findViewById(R.id.btnSecurityActs);
+        btnActos = (Button) findViewById(R.id.btnActos);
+        btnPasos = (Button) findViewById(R.id.btnPasos);
+        btnObjetivos = (Button) findViewById(R.id.btnObjetivos);
+        btnPoliticas = (Button) findViewById(R.id.btnPoliticas);
 
-        btnSecurityActs.setOnClickListener(new View.OnClickListener() {
+
+        btnPasos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSecurityActs = new Intent(security.this, security_acts.class);
+                Intent intentSecurityActs = new Intent(security.this, security_seven.class);
                 startActivity(intentSecurityActs);
             }
         });
 
-        btnSecuritySeven.setOnClickListener(new View.OnClickListener() {
+        btnActos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSecurityS = new Intent(security.this, security_seven.class);
-                startActivity(intentSecurityS);
+                Intent conceptos = new Intent(security.this, security_acts.class );
+                startActivity(conceptos);
+            }
+        });
+
+        btnObjetivos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent objetivosSeguridad = new Intent(security.this, security_objetivo.class);
+                startActivity(objetivosSeguridad);
+            }
+        });
+
+        btnPoliticas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent politicas = new Intent(security.this, security_politicas.class);
+                startActivity(politicas);
             }
         });
 
 
 
+    }
+    protected void onDestroy(){
+        super.onDestroy();
     }
 
 }

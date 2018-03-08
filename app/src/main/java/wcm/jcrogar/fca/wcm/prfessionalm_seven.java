@@ -10,4 +10,8 @@ public class prfessionalm_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.prfessionalm_seven);
     }
+
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

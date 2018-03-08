@@ -10,4 +10,7 @@ public class cost_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cost_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

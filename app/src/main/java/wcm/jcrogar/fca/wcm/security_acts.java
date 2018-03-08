@@ -8,6 +8,6 @@ public class security_acts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_security_acts);
+        setContentView(R.layout.security_acts);
     }
 }

@@ -10,4 +10,7 @@ public class autono_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.autono_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

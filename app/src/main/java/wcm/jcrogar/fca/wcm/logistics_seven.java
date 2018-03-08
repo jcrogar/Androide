@@ -10,4 +10,7 @@ public class logistics_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.logistics_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

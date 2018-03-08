@@ -10,4 +10,8 @@ public class quality_control_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quality_control_seven);
     }
+
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

@@ -10,4 +10,7 @@ public class people_development_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.people_development_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

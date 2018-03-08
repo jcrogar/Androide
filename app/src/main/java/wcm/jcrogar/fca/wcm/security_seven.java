@@ -10,4 +10,8 @@ public class security_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.security__seven);
     }
+
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

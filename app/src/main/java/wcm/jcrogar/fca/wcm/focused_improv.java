@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class focused_improv extends AppCompatActivity {
 
@@ -20,8 +21,10 @@ public class focused_improv extends AppCompatActivity {
             public void onClick(View v) {
                 Intent innerFocused = new Intent(focused_improv.this, focused_seven.class);
                 startActivity(innerFocused);
-
             }
         });
+    }
+    protected void onDestroy(){
+        super.onDestroy();
     }
 }

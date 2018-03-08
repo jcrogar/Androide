@@ -10,8 +10,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="387dp"
-        android:layout_height="565dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,157 +33,167 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="0dp"
                 android:text="Paso 1"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toLeftOf="@+id/textView58"
-                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                android:layout_marginEnd="16dp" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="73dp"
                 android:layout_height="55dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/verdeflecha"
-                app:layout_constraintRight_toLeftOf="@+id/textView58"
+                android:layout_marginLeft="16dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView59"
-                android:layout_marginLeft="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="1.0" />
+                app:layout_constraintRight_toLeftOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/textView59"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="4dp" />
 
             <TextView
                 android:id="@+id/textView119"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="0dp"
                 android:text="Paso 2"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toLeftOf="@+id/textView59"
-                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                android:layout_marginEnd="16dp" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="73dp"
                 android:layout_height="55dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/verdeflecha"
-                app:layout_constraintRight_toLeftOf="@+id/textView59"
                 android:layout_marginRight="4dp"
                 android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView59"
+                app:layout_constraintTop_toBottomOf="@+id/textView61"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
             <TextView
                 android:id="@+id/textView117"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
                 android:text="Paso 4"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginTop="0dp"
-                app:layout_constraintTop_toBottomOf="@+id/imageView8"
                 app:layout_constraintRight_toLeftOf="@+id/textView60"
-                android:layout_marginRight="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                android:layout_marginEnd="16dp" />
 
             <TextView
                 android:id="@+id/textView118"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="0dp"
                 android:text="Paso 3"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toLeftOf="@+id/textView61"
-                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                android:layout_marginEnd="16dp" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="73dp"
                 android:layout_height="55dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/verdeflecha"
-                app:layout_constraintRight_toLeftOf="@+id/textView61"
                 android:layout_marginRight="4dp"
                 android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView60" />
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/textView60"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="73dp"
                 android:layout_height="55dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/verdeflecha"
-                app:layout_constraintRight_toLeftOf="@+id/textView60"
                 android:layout_marginRight="4dp"
                 android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView60"
+                app:layout_constraintTop_toBottomOf="@+id/textView62"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
             <TextView
                 android:id="@+id/textView115"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
                 android:text="Paso 5"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginTop="0dp"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6"
                 app:layout_constraintRight_toLeftOf="@+id/textView62"
-                android:layout_marginRight="16dp" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                android:layout_marginEnd="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="73dp"
-        android:layout_height="55dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/verdeflecha"
-        app:layout_constraintRight_toLeftOf="@+id/textView62"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView62"
+                app:layout_constraintTop_toBottomOf="@+id/textView63"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="73dp"
-        android:layout_height="55dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/verdeflecha"
-        app:layout_constraintRight_toLeftOf="@+id/textView63"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/textView64"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
             <TextView
                 android:id="@+id/textView114"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="0dp"
                 android:text="Paso 6"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toLeftOf="@+id/textView63"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                android:layout_marginEnd="16dp" />
 
             <TextView
                 android:id="@+id/textView62"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:layout_marginEnd="24dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:gravity="left|center_vertical"
                 android:text="Inspeccion autonoma (Contramedidas contra los problemas de seguridad)"
+                android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 app:layout_constraintHorizontal_bias="0.834"
@@ -195,71 +205,87 @@
                 android:id="@+id/textView63"
                 android:layout_width="120dp"
                 android:layout_height="118dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:gravity="left|center_vertical"
                 android:text="Estandares autonomos de seguridad (Inspeccion de niveles de seguridad)"
+                android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView64"
-                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.868"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="0.868" />
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView64" />
 
             <TextView
                 android:id="@+id/textView64"
                 android:layout_width="120dp"
                 android:layout_height="87dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="24dp"
+
                 android:gravity="center_vertical"
+                android:singleLine="false"
+                android:soundEffectsEnabled="false"
                 android:text="Plena implementacion del sistema de seguridad"
+                android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView57"
-                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.852"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="0.852" />
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
             <TextView
                 android:id="@+id/textView61"
                 android:layout_width="120dp"
                 android:layout_height="150dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="40dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:gravity="left|center_vertical"
                 android:text="Establecer estandares tentativos de seguridad (Enlistando todos los problemas de seguridad)"
+                android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView60"
-                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="0.68" />
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
             <TextView
                 android:id="@+id/textView60"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="32dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:gravity="left|center_vertical"
                 android:text="Inspeccion general para la seguridad (entrenamiento y crecimiento de las personas)"
+                android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView62"
-                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.735"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintHorizontal_bias="0.735" />
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView62" />
 
             <TextView
                 android:id="@+id/textView50"
                 android:layout_width="0dp"
                 android:layout_height="115dp"
-                android:background="@android:color/holo_green_light"
+                android:background="#9CFA06"
                 android:gravity="center_vertical|center_horizontal"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="36sp"
@@ -274,20 +300,17 @@
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_width="332dp"
-                android:layout_height="91dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
+                android:layout_width="324dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="24dp"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/textView20"
                 app:layout_constraintHorizontal_bias="0.521"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="@+id/textView20"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.625"
-                app:srcCompat="@drawable/safety_logo" />
+                app:srcCompat="@drawable/safety_logo"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/textView57"
@@ -298,71 +321,78 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@android:color/holo_green_light"
+                android:background="#9CFA06"
                 android:gravity="center"
                 android:text="Crear una cultura de seguridad"
-                android:textColor="@android:color/white"
+                android:textColor="#37372B"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="151dp"
-        android:layout_height="67dp"
-        android:gravity="left|center_vertical"
-        android:text="Analisis de accidentes (Analisis de causas)"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView59"
-        android:layout_marginRight="56dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.639" />
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="151dp"
+                android:layout_height="67dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Analisis de accidentes (Analisis de causas)"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.639"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
 
-    <TextView
-        android:id="@+id/textView59"
-        android:layout_width="162dp"
-        android:layout_height="116dp"
-        android:gravity="left|center_vertical"
-        android:text="Contramedida y expansion horizontal (Contramedidas en areas similares)"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView61"
-        android:layout_marginRight="48dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.745" />
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="162dp"
+                android:layout_height="116dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left|center_vertical"
+                android:text="Contramedida y expansion horizontal (Contramedidas en areas similares)"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.745"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView61" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="73dp"
-        android:layout_height="55dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/verdeflecha"
-        app:layout_constraintRight_toLeftOf="@+id/textView64"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="73dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintRight_toLeftOf="@+id/textView64"
+                app:layout_constraintTop_toBottomOf="@+id/textView57"
+                app:srcCompat="@drawable/verdeflecha"
+                android:layout_marginEnd="4dp" />
 
             <TextView
                 android:id="@+id/textView113"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="0dp"
                 android:text="Paso 7"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintRight_toRightOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                android:layout_marginEnd="16dp" />
             <!--11-->
 
         </android.support.constraint.ConstraintLayout>

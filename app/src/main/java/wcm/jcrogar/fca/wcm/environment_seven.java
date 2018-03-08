@@ -10,4 +10,7 @@ public class environment_seven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.environment_seven);
     }
+    protected void onDestroy(){
+        super.onDestroy();
+    }
 }

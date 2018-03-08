@@ -33,28 +33,77 @@
         <activity
             android:name=".focused_improv"
             android:screenOrientation="portrait" />
-        <activity android:name=".cost_deployment" />
-        <activity android:name=".autonomous_maintenance" />
-        <activity android:name=".professional_maintenance" />
-        <activity android:name=".logistics" />
-        <activity android:name=".environment" />
-        <activity android:name=".equipment_management" />
-        <activity android:name=".people_development" />
-        <activity android:name=".security_seven" />
-        <activity android:name=".security_acts" />
-        <activity android:name=".cost_seven" />
-        <activity android:name=".cost_perdidas" />
-        <activity android:name=".focused_seven" />
-        <activity android:name=".autono_seven" />
-        <activity android:name=".autono_cilr" />
-        <activity android:name=".prfessionalm_seven" />
-        <activity android:name=".quality_control_seven" />
-        <activity android:name=".logistics_seven" />
-        <activity android:name=".environment_seven" />
-        <activity android:name=".environment_rs" />
-        <activity android:name=".equipment_seven" />
-        <activity android:name=".people_development_seven" />
-        <activity android:name=".info_wcm"></activity>
+        <activity
+            android:name=".cost_deployment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".autonomous_maintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".professional_maintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".logistics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".environment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".equipment_management"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".people_development"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security_acts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cost_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cost_perdidas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".focused_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".autono_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".autono_cilr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prfessionalm_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quality_control_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".logistics_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".environment_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".environment_rs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".equipment_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".people_development_seven"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".info_wcm"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cost_calculo" />
+        <activity android:name=".cost_objetivos" />
+        <activity android:name=".security_objetivo" />
+        <activity android:name=".login_activity" />
+        <activity android:name=".security_politicas"></activity>
     </application>
 
 </manifest>
