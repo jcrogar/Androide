@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         btnAMSgt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAM = new Intent(MainActivity.this, autonomous_maintenance.class);
+                Intent intentAM = new Intent(MainActivity.this, autono.class);
                 startActivity(intentAM);
             }
         });
