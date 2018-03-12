@@ -7,76 +7,58 @@
     android:background="@color/colorAccent"
     tools:context="wcm.jcrogar.fca.wcm.people_development">
 
-    <TextView
-        android:id="@+id/textView94"
+    <Button
+        android:id="@+id/btnPeopleSeven"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#FF66CC"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:backgroundTint="#EC3CDA"
+        android:elevation="0dp"
+        android:text="7 PASOS"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button18"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:backgroundTint="#EC3CDA"
+        android:elevation="0dp"
         android:text="Objetivo"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-
-    <TextView
-        android:id="@+id/textView95"
-        android:layout_width="349dp"
-        android:layout_height="79dp"
-        android:text="Educar, Entrenar y nutrir a la gente para materializar el WCM, ya que el exito de lograrlo depende de las personas."
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView94"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="16dp" />
-
-    <TextView
-        android:id="@+id/textView96"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#FF66CC"
-        android:gravity="center_horizontal"
-        android:text="Mision"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView95" />
-
-    <TextView
-        android:id="@+id/textView97"
-        android:layout_width="344dp"
-        android:layout_height="153dp"
-        android:gravity="left|center_vertical"
-        android:text="Obtener el compromiso de todos los que trabajamos en complejo Toluca para desarrollar los conocimientos y las habilidades requeridas para atacar todas las perdidas a traves de eliminar el error humano."
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView96"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="0dp"
         android:layout_height="115dp"
-        android:background="#FF66CC"
+        android:background="#EC3CDA"
         android:gravity="center_vertical|center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30sp"
@@ -84,21 +66,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPeople"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:backgroundTint="#FF66CC"
-        android:text="7 Pasos"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView97" />
 
     <ImageView
         android:id="@+id/imageView32"
@@ -119,13 +86,16 @@
 
     <ImageView
         android:id="@+id/imageView31"
-        android:layout_width="140dp"
-        android:layout_height="106dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="151dp"
+        android:layout_height="125dp"
         android:scaleType="fitXY"
-        app:layout_constraintLeft_toRightOf="@+id/btnPeople"
-        app:layout_constraintTop_toBottomOf="@+id/textView97"
         app:srcCompat="@drawable/cerebro"
-        android:layout_marginStart="8dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="154dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnPeopleSeven"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.805" />
 </android.support.constraint.ConstraintLayout>

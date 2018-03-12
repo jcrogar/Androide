@@ -12,7 +12,7 @@ public class equipment_management extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.equipment_management);
-        btnEquipmentSeven = (Button)findViewById(R.id.btnEarlySeven);
+        btnEquipmentSeven = (Button)findViewById(R.id.btnEquipmentSeven);
 
         btnEquipmentSeven.setOnClickListener(new View.OnClickListener() {
             @Override

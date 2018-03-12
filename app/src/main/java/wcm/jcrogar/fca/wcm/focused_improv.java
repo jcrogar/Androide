@@ -9,14 +9,14 @@ import android.widget.Toast;
 
 public class focused_improv extends AppCompatActivity {
 
-    Button btnFocusedSgt;
+    Button btnSevenFocus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.focused_improv);
-        btnFocusedSgt = (Button)findViewById(R.id.btnFocusedSeven);
-        btnFocusedSgt.setOnClickListener(new View.OnClickListener() {
+        btnSevenFocus = (Button)findViewById(R.id.btnSevenFocus);
+        btnSevenFocus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent innerFocused = new Intent(focused_improv.this, focused_seven.class);

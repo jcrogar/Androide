@@ -15,8 +15,8 @@ public class environment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.environment);
 
-        btnEnviSevenSgt = (Button)findViewById(R.id.btnenvSeven);
-        btnEnvRsSgt = (Button)findViewById(R.id.btnEnvRs);
+        btnEnviSevenSgt = (Button)findViewById(R.id.btnEnviSevenSgt);
+        btnEnvRsSgt = (Button)findViewById(R.id.btnEnvRsSgt);
         btnEnviSevenSgt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

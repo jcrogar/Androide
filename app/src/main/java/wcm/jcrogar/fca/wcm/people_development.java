@@ -12,7 +12,7 @@ public class people_development extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.people_development);
-        btnPeopleSeven = (Button)findViewById(R.id.btnPeople);
+        btnPeopleSeven = (Button)findViewById(R.id.btnPeopleSeven);
 
         btnPeopleSeven.setOnClickListener(new View.OnClickListener() {
             @Override

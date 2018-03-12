@@ -7,15 +7,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class professional_maintenance extends AppCompatActivity {
-    Button btnPMSevenSgt;
+    Button btnSevenPM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.professional_maintenance);
-        btnPMSevenSgt = (Button)findViewById(R.id.btnPMSeven);
+        btnSevenPM = (Button)findViewById(R.id.btnSevenPM);
 
-        btnPMSevenSgt.setOnClickListener(new View.OnClickListener() {
+        btnSevenPM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent innerPM = new Intent(professional_maintenance.this, prfessionalm_seven.class);

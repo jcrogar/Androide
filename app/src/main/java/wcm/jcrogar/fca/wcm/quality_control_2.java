@@ -7,19 +7,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class quality_control_2 extends AppCompatActivity {
-    Button btnQualityM;
-    Button btnQualityN;
-    Button btnQualitySgt;
+    Button btnObjetivoQC;
+    Button btnSevenQC;
+    Button btnToolsQC;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quality_control_2);
-        btnQualityM = (Button) findViewById(R.id.btnQualityM);
-        btnQualityN = (Button) findViewById(R.id.btnQualityN);
-        btnQualitySgt = (Button) findViewById(R.id.btnQualitySeven);
-        btnQualitySgt.setOnClickListener(new View.OnClickListener() {
+        btnObjetivoQC = (Button) findViewById(R.id.btnObjetivoQC);
+        btnSevenQC = (Button) findViewById(R.id.btnSevenQC);
+        btnToolsQC = (Button) findViewById(R.id.btnToolsQC);
+        btnSevenQC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent innerSeven = new Intent(quality_control_2.this, quality_control_seven.class);
@@ -27,7 +27,7 @@ public class quality_control_2 extends AppCompatActivity {
             }
         });
 
-        btnQualityM.setOnClickListener(new View.OnClickListener() {
+        btnToolsQC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(quality_control_2.this, quality_control_3.class);
@@ -35,7 +35,7 @@ public class quality_control_2 extends AppCompatActivity {
             }
         });
 
-        btnQualityN.setOnClickListener(new View.OnClickListener() {
+        btnObjetivoQC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(quality_control_2.this, quality_control.class);

@@ -13,7 +13,7 @@ public class logistics extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.logistics);
-        btnLogisticSgt = (Button)findViewById(R.id.btnLogisticSeven);
+        btnLogisticSgt = (Button)findViewById(R.id.btnLogisticSgt);
         btnLogisticSgt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
