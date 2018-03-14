@@ -104,7 +104,7 @@
         <activity android:name=".security_objetivo" />
         <activity android:name=".login_activity" />
         <activity android:name=".security_politicas" />
-        <activity android:name=".autono"></activity>
+        <activity android:name=".autono" />
     </application>
 
 </manifest>
