@@ -2,6 +2,7 @@ package wcm.jcrogar.fca.wcm;
 
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btnEquipmentSgt;
     ImageButton btnPeopleSgt;
     ImageButton btnwcmSgt;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +40,15 @@ public class MainActivity extends AppCompatActivity {
         btnEnvironmentSgt = (ImageButton) findViewById(R.id.btnEnviroment);
         btnEquipmentSgt = (ImageButton) findViewById(R.id.btnEquipment);
         btnPeopleSgt = (ImageButton) findViewById(R.id.btnPeople);
+        mp = MediaPlayer.create(this, R.raw.click);
 
         btnwcmSgt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intenWcm = new Intent(MainActivity.this, info_wcm.class);
                 startActivity(intenWcm);
+                mp.start();
+
             }
         });
 
@@ -52,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentPeople = new Intent(MainActivity.this, people_development.class);
                 startActivity(intentPeople);
+                mp.start();
             }
         });
 
@@ -60,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentEM = new Intent(MainActivity.this, equipment_management.class);
                 startActivity(intentEM);
+                mp.start();
             }
         });
 
@@ -68,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentEnv = new Intent(MainActivity.this, environment.class);
                 startActivity(intentEnv);
+                mp.start();
             }
         });
 
@@ -76,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentL = new Intent(MainActivity.this, logistics.class);
                 startActivity(intentL);
+                mp.start();
             }
         });
 
@@ -84,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentProM = new Intent(MainActivity.this, professional_maintenance.class);
                 startActivity(intentProM);
+                mp.start();
             }
         });
 
@@ -92,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentAM = new Intent(MainActivity.this, autono.class);
                 startActivity(intentAM);
+                mp.start();
             }
         });
 
@@ -100,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentCost = new Intent(MainActivity.this, cost_deployment.class);
                 startActivity(intentCost);
+                mp.start();
             }
         });
 
@@ -108,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentF = new Intent(MainActivity.this, focused_improv.class);
                 startActivity(intentF);
+                mp.start();
             }
         });
 
@@ -117,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, quality_control_2.class);
                 startActivity(intent);
+                mp.start();
             }
         });
         btnSecuritySgt.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(MainActivity.this, security.class);
                 startActivity(intent1);
+                mp.start();
             }
         });
 
