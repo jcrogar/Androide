@@ -11,8 +11,9 @@
 
     <TextView
         android:id="@+id/textView67"
-        android:layout_width="270dp"
-        android:layout_height="83dp"
+        android:layout_width="246dp"
+        android:layout_height="68dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="55dp"
         android:gravity="center_vertical"
         android:text="Recuerda usar correctamente el Equipo de Seguridad"
@@ -20,9 +21,8 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnPoliticas"
-        android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPoliticas" />
 
     <Button
         android:id="@+id/btnPoliticas"

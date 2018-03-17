@@ -16,9 +16,6 @@ public class splash extends AppCompatActivity {
     public ProgressBar splash_progressbar;
     public int MAX_VALUE = 100;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -27,7 +27,7 @@ public class security extends AppCompatActivity {
         btnPasos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSecurityActs = new Intent(security.this, security_seven.class);
+                Intent intentSecurityActs = new Intent(security.this, securitySeven.class);
                 startActivity(intentSecurityActs);
             }
         });

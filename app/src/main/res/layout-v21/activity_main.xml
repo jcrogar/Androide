@@ -142,7 +142,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogistic"
         app:srcCompat="@drawable/equip"
-        android:layout_marginStart="16dp" />
+        android:layout_marginStart="16dp"
+        />
 
     <ImageButton
         android:id="@+id/btnPeople"

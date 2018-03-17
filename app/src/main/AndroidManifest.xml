@@ -11,9 +11,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".quality_control"
             android:screenOrientation="portrait" />
@@ -101,15 +99,16 @@
         <activity android:name=".login_activity" />
         <activity android:name=".security_politicas" />
         <activity android:name=".autono" />
-        <activity android:name=".splash"
+        <activity
+            android:name=".splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".securitySeven"></activity>
     </application>
 
 </manifest>
