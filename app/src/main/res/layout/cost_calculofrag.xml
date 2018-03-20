@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal"
+    tools:context="wcm.jcrogar.fca.wcm.cost_calculofrag">
+
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FDF502"
+        android:contextClickable="false"
+        android:gravity="center"
+        android:text="Costeo de Proyecto"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#37372B"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFrag1"
+        android:layout_width="136dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:backgroundTint="#FDF502"
+        android:text="ACTIVIDADES/RETRABAJO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <Button
+        android:id="@+id/btnFrag2"
+        android:layout_width="136dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:backgroundTint="#FDF502"
+        android:text="Reduccion de Tiempo/Caminatas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFrag1" />
+
+    <FrameLayout
+        android:id="@+id/contenedor"
+        android:layout_width="397dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFrag1"
+        app:layout_constraintTop_toBottomOf="@+id/textView72"
+        app:layout_constraintVertical_bias="1.0">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+

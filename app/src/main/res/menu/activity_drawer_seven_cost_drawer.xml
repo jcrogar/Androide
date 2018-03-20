@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_paso1"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 1" />
+        <item
+            android:id="@+id/nav_paso2"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 2" />
+        <item
+            android:id="@+id/nav_paso3"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 3" />
+        <item
+            android:id="@+id/nav_paso4"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 4" />
+        <item
+            android:id="@+id/nav_paso5"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 5"/>
+
+        <item
+            android:id="@+id/nav_paso6"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 6"/>
+
+        <item
+            android:id="@+id/nav_paso7"
+            android:icon="@drawable/amarillo"
+            android:title="Paso 7"/>
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

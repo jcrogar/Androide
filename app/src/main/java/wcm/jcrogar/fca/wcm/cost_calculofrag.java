@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class securitySeven extends AppCompatActivity implements View.OnClickListener, fragment1.OnFragmentInteractionListener, fragment2.OnFragmentInteractionListener{
+public class cost_calculofrag extends AppCompatActivity implements View.OnClickListener, fragment1.OnFragmentInteractionListener, fragment2.OnFragmentInteractionListener{
     Button btngraf1, btnfrag2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.security_sevenfrag);
+        setContentView(R.layout.cost_calculofrag);
 
         fragment1  frag1 = new fragment1();
 

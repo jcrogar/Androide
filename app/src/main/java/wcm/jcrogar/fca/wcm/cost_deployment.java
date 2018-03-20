@@ -27,7 +27,7 @@ public class cost_deployment extends AppCompatActivity {
         btn7PasosCosto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent innerCostper = new Intent(cost_deployment.this, cost_seven.class);
+                Intent innerCostper = new Intent(cost_deployment.this, drawer_seven_cost.class);
                 startActivity(innerCostper);
             }
         });

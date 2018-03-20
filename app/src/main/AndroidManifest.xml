@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".quality_control"
             android:screenOrientation="portrait" />
@@ -108,7 +108,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".securitySeven"></activity>
+        <activity
+            android:name=".cost_calculofrag"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".drawer_seven_cost"
+            android:label="@string/title_activity_drawer_seven_cost"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
