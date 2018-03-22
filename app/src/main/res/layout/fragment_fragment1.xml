@@ -1,246 +1,268 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="wcm.jcrogar.fca.wcm.fragment1">
 
-    <!-- TODO: Update blank fragment layout -->
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstraintFrgCalculo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <TextView
-                android:id="@+id/textView74"
-                android:layout_width="80dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="24dp"
-                android:text="LLENA SOLO 1 OPCION"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView39" />
-
-            <EditText
-                android:id="@+id/textMinutos"
-                android:layout_width="114dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/textView72"
-                app:layout_constraintTop_toBottomOf="@+id/textGente" />
-
-            <EditText
-                android:id="@+id/textDia"
-                android:layout_width="73dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/imageView39"
-                app:layout_constraintTop_toBottomOf="@+id/textView73" />
-
-            <EditText
-                android:id="@+id/textSemana"
-                android:layout_width="73dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="32dp"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/imageView39"
-                app:layout_constraintTop_toBottomOf="@+id/textDia" />
-
-            <EditText
-                android:id="@+id/textMes"
-                android:layout_width="73dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="32dp"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/textView74"
-                app:layout_constraintTop_toBottomOf="@+id/textSemana" />
-
-            <TextView
-                android:id="@+id/textView83"
-                android:layout_width="105dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="36dp"
-                android:text="TOTAL"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView74" />
-
-            <TextView
-                android:id="@+id/textView76"
-                android:layout_width="0dp"
-
-                android:layout_height="115dp"
-                android:background="#FDF502"
-                android:gravity="center"
-                android:text="BENEFICIO POR ACTIVIDADES/RETRABAJO"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="#37372B"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="#FDF502"
+            android:gravity="center"
+            android:text="BENEFICIO POR ACTIVIDADES/RETRABAJO"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#37372B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView66"
-            android:layout_width="197dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Yo soy el indicador del Scroll"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="615dp" />
+
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="¿Cuanta gente realiza la actividad?"
             android:textColor="@android:color/white"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
         <TextView
             android:id="@+id/textView72"
-            android:layout_width="197dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="¿Cauntos minutos dura?"
+            android:layout_width="202dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="¿Cuantos Minutos dura?"
             android:textColor="@android:color/white"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView66" />
+            app:layout_constraintTop_toBottomOf="@+id/textView67" />
 
-            <TextView
-                android:id="@+id/textView73"
-                android:layout_width="197dp"
-                android:layout_height="58dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="12dp"
-                android:text="¿Cada cuanto se realíza esta actividad?"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView72" />
+        <EditText
+            android:id="@+id/textGente"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView67"
+            app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
-            <TextView
-                android:id="@+id/textView86"
-                android:layout_width="121dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center"
-                android:text="Veces por mes"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/textMes"
-                app:layout_constraintTop_toBottomOf="@+id/textView85" />
+        <EditText
+            android:id="@+id/textMinutos"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView72"
+            app:layout_constraintTop_toBottomOf="@+id/textGente" />
 
-            <EditText
-                android:id="@+id/textGente"
-                android:layout_width="114dp"
-                android:layout_height="58dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                android:selectAllOnFocus="false"
-                android:singleLine="false"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/textView66"
-                app:layout_constraintTop_toBottomOf="@+id/textView76" />
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="¿Cada cuanto se realíza esta actividad?"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FBF781"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView72" />
 
-            <TextView
-                android:id="@+id/textView84"
-                android:layout_width="126dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="Veces al día"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/textDia"
-                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+        <EditText
+            android:id="@+id/textDia"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
-            <ImageView
-                android:id="@+id/imageView39"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/amarillo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+        <EditText
+            android:id="@+id/textSemana"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintTop_toBottomOf="@+id/textDia" />
 
-            <TextView
-                android:id="@+id/textView85"
-                android:layout_width="121dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center"
-                android:text="Veces por semana"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/textSemana"
-                app:layout_constraintTop_toBottomOf="@+id/textView84" />
+        <EditText
+            android:id="@+id/textMes"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintTop_toBottomOf="@+id/textSemana" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@android:drawable/ic_notification_overlay"
-                android:backgroundTint="#FDF502"
-                android:text="Calcular"
-                app:layout_constraintTop_toBottomOf="@+id/textView86"
-                tools:layout_editor_absoluteX="234dp" />
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:text="Veces al día"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textDia"
+            app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
-            <TextView
-                android:id="@+id/textTotal"
-                android:layout_width="73"
-                android:layout_height="43"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:textColor="@android:color/white"
-                app:layout_constraintStart_toEndOf="@+id/textView83"
-                app:layout_constraintTop_toBottomOf="@+id/textMes" />
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Veces por semana"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textSemana"
+            app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
-        </android.support.constraint.ConstraintLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Veces por mes"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textMes"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="122dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="Recuerda llenar solo 1 opcion"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textTotal"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+        <EditText
+            android:id="@+id/textTotal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView87"
+            app:layout_constraintTop_toBottomOf="@+id/textMes" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:text="Total $"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcularAct" />
+
+        <Button
+            android:id="@+id/btnCalcularAct"
+            android:layout_width="96dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="#FBF781"
+            android:text="Calcular"
+            android:textColor="#37372B"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
 
     </android.support.constraint.ConstraintLayout>
 
 
 
-</FrameLayout>
+
+
+</ScrollView>
