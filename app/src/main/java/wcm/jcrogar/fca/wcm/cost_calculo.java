@@ -18,7 +18,7 @@ public class cost_calculo extends AppCompatActivity {
         btnQuick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent calculoQuick = new Intent(cost_calculo.this, cost_calculofrag.class);
+                Intent calculoQuick = new Intent(cost_calculo.this, cost_calculoqk.class);
                 startActivity(calculoQuick);
             }
         });

@@ -6,11 +6,21 @@
     android:orientation="horizontal"
     tools:context="wcm.jcrogar.fca.wcm.fragment2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-        tools:text="Este es el fragmento2" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="246dp"
+            android:layout_height="78dp"
+            android:text="@string/hello_blank_fragment"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="38dp"
+            tools:text="Este es el fragmento2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
 
 </FrameLayout>

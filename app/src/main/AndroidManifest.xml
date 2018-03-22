@@ -55,9 +55,6 @@
             android:name=".security_acts"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".cost_seven"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".cost_perdidas"
             android:screenOrientation="portrait" />
         <activity
@@ -109,11 +106,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cost_calculofrag"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".drawer_seven_cost"
             android:label="@string/title_activity_drawer_seven_cost"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".cost_calculoqk"
+            android:label="@string/title_activity_cost_calculoqk"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
