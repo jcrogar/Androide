@@ -27,8 +27,8 @@ public class splash extends AppCompatActivity {
         animationDrawable.start();
 
 
-        splash_progressbar = (ProgressBar) findViewById(R.id.progressBar);
-        splash_progressbar.setMax(100);
+     //   splash_progressbar = (ProgressBar) findViewById(R.id.progressBar);
+     //   splash_progressbar.setMax(100);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -39,7 +39,7 @@ public class splash extends AppCompatActivity {
             }
         }, DURACION_SPLASH);
 
-        new CountDownTimer(10000, 100) {
+       /* new CountDownTimer(10000, 100) {
 
             int progreso = 1;
             @Override
@@ -52,7 +52,7 @@ public class splash extends AppCompatActivity {
             public void onFinish() {
                 splash_progressbar.setProgress(MAX_VALUE);
             }
-        }.start();
+        }.start();*/
 
     }
 }

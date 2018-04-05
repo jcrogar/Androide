@@ -77,12 +77,15 @@
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="false"
             android:singleLine="false"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,14 +97,13 @@
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="false"
             android:singleLine="false"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -133,9 +135,10 @@
             android:layout_marginTop="32dp"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
             app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
         <EditText
@@ -146,9 +149,10 @@
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
             app:layout_constraintTop_toBottomOf="@+id/textDia" />
 
         <EditText
@@ -159,9 +163,10 @@
             android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/btnCalcularAct"
+            app:layout_constraintStart_toEndOf="@+id/imageView39"
             app:layout_constraintTop_toBottomOf="@+id/textSemana" />
 
         <TextView
@@ -204,57 +209,52 @@
             app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
         <TextView
-            android:id="@+id/textView86"
-            android:layout_width="122dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:text="Recuerda llenar solo 1 opcion"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textTotal"
-            app:layout_constraintTop_toBottomOf="@+id/textView84" />
-
-        <EditText
-            android:id="@+id/textTotal"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView87"
-            app:layout_constraintTop_toBottomOf="@+id/textMes" />
-
-        <TextView
             android:id="@+id/textView87"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
             android:text="Total $"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnCalcularAct" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView39" />
 
         <Button
             android:id="@+id/btnCalcularAct"
             android:layout_width="96dp"
             android:layout_height="67dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
             android:backgroundTint="#FBF781"
             android:text="Calcular"
             android:textColor="#37372B"
             android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textTotal"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView87"
+            app:layout_constraintTop_toBottomOf="@+id/textMes" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="79dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cstos_foco"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
