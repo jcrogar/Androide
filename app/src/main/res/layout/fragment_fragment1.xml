@@ -1,5 +1,4 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,8 +14,8 @@
 
         <TextView
             android:id="@+id/textView76"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:background="#FDF502"
             android:gravity="center"
             android:text="BENEFICIO POR ACTIVIDADES/RETRABAJO"
@@ -39,9 +38,8 @@
             android:text="Yo soy el indicador del Scroll"
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="615dp" />
+            tools:layout_editor_absoluteY="1070dp" />
 
 
         <TextView
@@ -77,9 +75,9 @@
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="numberDecimal"
@@ -97,6 +95,8 @@
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:ems="10"
@@ -173,8 +173,7 @@
             android:id="@+id/textView74"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="44dp"
             android:text="Veces al día"
             android:textColor="@android:color/white"
@@ -186,8 +185,7 @@
             android:id="@+id/textView83"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Veces por semana"
             android:textColor="@android:color/white"
@@ -199,8 +197,7 @@
             android:id="@+id/textView84"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Veces por mes"
             android:textColor="@android:color/white"
@@ -211,10 +208,13 @@
         <TextView
             android:id="@+id/textView87"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="28dp"
-            android:text="Total $"
+            android:layout_height="46dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="$"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -225,7 +225,7 @@
             android:id="@+id/btnCalcularAct"
             android:layout_width="96dp"
             android:layout_height="67dp"
-            android:layout_marginStart="34dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:backgroundTint="#FBF781"
             android:text="Calcular"
@@ -236,10 +236,11 @@
 
         <TextView
             android:id="@+id/textTotal"
-            android:layout_width="78dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
+            android:layout_width="138dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -251,6 +252,7 @@
             android:id="@+id/imageView39"
             android:layout_width="79dp"
             android:layout_height="140dp"
+            android:layout_marginLeft="32dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="48dp"
             android:scaleType="fitCenter"
@@ -258,11 +260,196 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="#FDF502"
+            android:gravity="center"
+            android:text="COSTO"
+            android:textAlignment="center"
+            android:textColor="#37372B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotal" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Analisis del Problema"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <EditText
+            android:id="@+id/textProblema"
+            android:layout_width="70dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Minutos"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textProblema"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Implementación de la mejora"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Minutos"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textMejora"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+        <EditText
+            android:id="@+id/textMejora"
+            android:layout_width="70dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView86"
+            app:layout_constraintTop_toBottomOf="@+id/textProblema" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="¿Cuanto tiempo ocupaste para la mejora?"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="69dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Minutos"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textTiempoMejora"
+            app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+        <EditText
+            android:id="@+id/textTiempoMejora"
+            android:layout_width="70dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/textMejora" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="$"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
+
+        <TextView
+            android:id="@+id/textTotalMejora"
+            android:layout_width="103dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView92"
+            app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#FDF502"
+            android:gravity="center"
+            android:text="FACTOR COSTO BENEFICIO"
+            android:textAlignment="center"
+            android:textColor="#37372B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="883dp" />
+
 
     </android.support.constraint.ConstraintLayout>
-
-
-
 
 
 </ScrollView>

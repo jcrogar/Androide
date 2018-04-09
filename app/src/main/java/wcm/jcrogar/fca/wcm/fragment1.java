@@ -2,6 +2,7 @@ package wcm.jcrogar.fca.wcm;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -28,8 +29,8 @@ import java.text.DecimalFormat;
  * create an instance of this fragment.
  */
 public class fragment1 extends Fragment {
-    EditText textGente, textMinutos, textDia, textSemana, textMes;
-    TextView textTotal;
+    EditText textGente, textMinutos, textDia, textSemana, textMes, textProblema, textMejora, textTiempoMejora ;
+    TextView textTotal, textTotalMejora;
     Button btnCalculatAct;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,6 +42,11 @@ public class fragment1 extends Fragment {
         // Inflate the layout for this fragment
         //View v = inflater.inflate(R.layout.fragment_fragment1, container, false);
         View v = inflater.inflate(R.layout.fragment_fragment1, container, false);
+
+        textProblema = (EditText) v.findViewById(R.id.textProblema);
+        textMejora = (EditText) v.findViewById(R.id.textMejora);
+        textTiempoMejora = (EditText) v.findViewById(R.id.textTiempoMejora);
+        textTotalMejora = (TextView) v.findViewById(R.id.textTotalMejora);
         textGente = (EditText) v.findViewById(R.id.textGente);
         textMinutos = (EditText) v.findViewById(R.id.textMinutos);
         textDia = (EditText) v.findViewById(R.id.textDia);
@@ -48,10 +54,17 @@ public class fragment1 extends Fragment {
         textMes = (EditText) v.findViewById(R.id.textMes);
         textTotal = (TextView) v.findViewById(R.id.textTotal);
         btnCalculatAct = (Button)v.findViewById(R.id.btnCalcularAct);
+        textTiempoMejora.setFocusable(false);
+        textTiempoMejora.setEnabled(false);
+        textTiempoMejora.setCursorVisible(false);
+        textTiempoMejora.setKeyListener(null);
+
+
         btnCalculatAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validar();
+                calcularCosto();
             }
         });
         return v;
@@ -126,5 +139,31 @@ public class fragment1 extends Fragment {
       String dia = String.format("%.2f",calculoDia);
       textTotal.setText(dia);
   }
+
+  public void calcularCosto()
+  {
+      if (textProblema.getText().toString().length() == 0  && textMejora.getText().toString().length()==0 && textMes.getText().toString().length() == 0)
+      {
+          Toast toast1 = Toast.makeText(getActivity(),"Ingrese Datos en Analisis del Prpblema o Implementacion de la mejora", Toast.LENGTH_LONG);
+          toast1.setGravity(Gravity.CENTER, 0, 0);
+          toast1.show();
+          textTotalMejora.setText("0.00");
+      }else
+          {
+          String valorProblema = textProblema.getText().toString();
+          String valorMejora = textMejora.getText().toString();
+          Double numProblema = Double.parseDouble(valorProblema);
+          Double numMejora = Double.parseDouble(valorMejora);
+          Double CalculoMejora;
+          Double TotalMejora;
+          CalculoMejora = numProblema + numMejora;
+          TotalMejora = CalculoMejora * 0.12;
+          String Total = String.format("%.2f", TotalMejora);
+          String mejora = String.format("%.2f", CalculoMejora);
+          textTiempoMejora.setText(mejora);
+          textTotalMejora.setText(Total);
+          }
+  }
+
 
 }
