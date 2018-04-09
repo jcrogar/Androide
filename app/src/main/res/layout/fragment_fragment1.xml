@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/textView76"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70"
             android:background="#FDF502"
             android:gravity="center"
             android:text="BENEFICIO POR ACTIVIDADES/RETRABAJO"
@@ -438,6 +438,7 @@
             android:id="@+id/textView93"
             android:layout_width="fill_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="32dp"
             android:background="#FDF502"
             android:gravity="center"
             android:text="FACTOR COSTO BENEFICIO"
@@ -445,8 +446,9 @@
             android:textColor="#37372B"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="883dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalMejora" />
 
 
     </android.support.constraint.ConstraintLayout>
