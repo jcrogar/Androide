@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/textView76"
             android:layout_width="fill_parent"
-            android:layout_height="70"
+            android:layout_height="70dp"
             android:background="#FDF502"
             android:gravity="center"
             android:text="BENEFICIO POR ACTIVIDADES/RETRABAJO"

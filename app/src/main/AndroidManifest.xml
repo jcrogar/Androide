@@ -112,7 +112,8 @@
         <activity
             android:name=".cost_calculoqk"
             android:label="@string/title_activity_cost_calculoqk"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".pruebaGrafica"></activity>
     </application>
 
 </manifest>
