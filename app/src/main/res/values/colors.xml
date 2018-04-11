@@ -6,4 +6,19 @@
 
     <color name="buttonpressed">#666666</color>
     <color name="buttonNotpressed">#999999</color>
+
+    <color name = "btnSafetypressed">#7ef57f</color>
+    <color name  = "btnSafetyNotpressed"> #999999 </color>
+    <!--Button Not Pressed no funciona!-->
+    <color name = "btnCostpressed">#f5ec33</color>
+    <color name  = "btnFocusedpressed">#8ef8fd</color>
+    <color name= "btnAutonopressed">#f9eb9ffc</color>
+    <color name  = "btnProfessionalpressed" >#f9fa9954</color>
+    <color name = "btnQualitipressed">#f9fa5441</color>
+    <color name  = "btnLogisticpressed">#f9f9f8f7</color>
+    <color name = "btnEnviromentalpressed">#f94ea2f5</color>
+    <color name="btnEarlypressed">#f92cd466</color>
+    <color name="btnPeoplepressed">#f9fc92f0</color>
+
+
 </resources>

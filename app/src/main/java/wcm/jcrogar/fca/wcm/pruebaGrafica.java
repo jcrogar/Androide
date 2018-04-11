@@ -3,6 +3,7 @@ package wcm.jcrogar.fca.wcm;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.Chart;
@@ -29,12 +30,15 @@ public class pruebaGrafica extends AppCompatActivity {
     private  String[]months = new String[] {"Enero","Febrero","Marzo","Abril","Mayo"};
     private int[]sale = new int[]{25,20,38,15};
     private int[]colors = new int[]{Color.BLACK,Color.RED,Color.GREEN,Color.BLUE, Color.GRAY};
+    //EditText Calculo; //Prueba para agregar Grafica
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prueba_grafica);
         barChart = (BarChart)findViewById(R.id.barChart);
         pieChart = (PieChart) findViewById(R.id.pieChart);
+        //Calculo = (EditText) findViewById(R.id.textTotal);
         createCharts();
         //https://github.com/codigofacilito/Graficas-Android
     }
@@ -67,6 +71,8 @@ public class pruebaGrafica extends AppCompatActivity {
         ArrayList<BarEntry> entries = new ArrayList<>();
         for (int i = 0; i<sale.length; i++)
             entries.add(new BarEntry(i,sale[i]));
+
+
             return entries;
     }
     private ArrayList<PieEntry>getPieEntries(){
@@ -118,13 +124,13 @@ public class pruebaGrafica extends AppCompatActivity {
         dataSet.setValueTextSize(10);
         return dataSet;
     }
-    private BarData getBarData(){
-        BarDataSet barDataSet = (BarDataSet)getData(new BarDataSet(getBarEntries(),""));
-        barDataSet.setBarShadowColor(Color.GRAY);
-        BarData barData = new BarData(barDataSet);
-        barData.setBarWidth(0.45f);
-        return barData;
-    }
+        private BarData getBarData(){
+            BarDataSet barDataSet = (BarDataSet)getData(new BarDataSet(getBarEntries(),""));
+            barDataSet.setBarShadowColor(Color.GRAY);
+            BarData barData = new BarData(barDataSet);
+            barData.setBarWidth(0.45f);
+            return barData;
+        }
 
     private PieData getPieData(){
         PieDataSet pieDataSet = (PieDataSet)getData(new PieDataSet(getPieEntries(),""));

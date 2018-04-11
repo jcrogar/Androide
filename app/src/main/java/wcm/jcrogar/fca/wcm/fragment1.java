@@ -17,7 +17,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.charts.Chart;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.LegendEntry;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.DataSet;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 
 /**
@@ -33,6 +47,14 @@ public class fragment1 extends Fragment {
     TextView textTotal, textTotalMejora;
     Button btnCalculatAct;
 
+    //Variables para Graficar
+    private BarChart barChart;
+    private  String[]months = new String[] {"Enero","Febrero","Marzo","Abril","Mayo"};
+    private int[]sale = new int[]{25,20,38,15};
+    private int[]colors = new int[]{Color.BLACK,Color.RED,Color.GREEN,Color.BLUE, Color.GRAY};
+    //Variables para Graficar
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Toast toast1 = Toast.makeText(getActivity(),"Recuerda llenar solo una opcion, En cada cuanto se realiza esta actividad", Toast.LENGTH_LONG);
@@ -42,6 +64,7 @@ public class fragment1 extends Fragment {
         // Inflate the layout for this fragment
         //View v = inflater.inflate(R.layout.fragment_fragment1, container, false);
         View v = inflater.inflate(R.layout.fragment_fragment1, container, false);
+        barChart = (BarChart)v.findViewById(R.id.barChart);  //Variable para redireccionar el Bar Chart
 
         textProblema = (EditText) v.findViewById(R.id.textProblema);
         textMejora = (EditText) v.findViewById(R.id.textMejora);
@@ -58,6 +81,9 @@ public class fragment1 extends Fragment {
         textTiempoMejora.setEnabled(false);
         textTiempoMejora.setCursorVisible(false);
         textTiempoMejora.setKeyListener(null);
+        //Llamada a la creacion de la grafica
+        createCharts();
+
 
 
         btnCalculatAct.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +95,8 @@ public class fragment1 extends Fragment {
         });
         return v;
     }
+
+
 
 
 
@@ -164,6 +192,91 @@ public class fragment1 extends Fragment {
           textTotalMejora.setText(Total);
           }
   }
+
+  //Creando la Grafica
+
+    private Chart getSameChart(Chart chart, String description, int textColor, int background, int animateY  ){
+        chart.getDescription().setText(description);
+        chart.getDescription().setTextColor(textColor);
+        chart.getDescription().setTextSize(15);
+        chart.setBackgroundColor(background);
+        chart.animateY(animateY);
+        legend(chart);
+        return chart;
+    }
+
+    private void legend(Chart chart){
+        Legend legend = chart.getLegend();
+        legend.setForm(Legend.LegendForm.CIRCLE);
+        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
+        ArrayList<LegendEntry> entries = new ArrayList<>();
+        for (int i = 0; i<months.length; i++){
+            LegendEntry entry = new LegendEntry();
+            entry.formColor=colors[i];
+            entry.label=months[i];
+            entries.add(entry);
+        }
+        legend.setCustom(entries);
+
+    }
+
+    private ArrayList<BarEntry>getBarEntries(){
+        ArrayList<BarEntry> entries = new ArrayList<>();
+        for (int i = 0; i<sale.length; i++)
+            entries.add(new BarEntry(i,sale[i]));
+
+
+        return entries;
+    }
+
+    private void axisX(XAxis axis){
+        axis.setGranularityEnabled(true);
+        axis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        axis.setValueFormatter(new IndexAxisValueFormatter(months));
+        //Para titulos
+        //axis.setEnabled(false);
+    }
+
+    private void axisLeft(YAxis axis){
+        axis.setSpaceTop(30);
+        axis.setAxisMinimum(0);
+        //axis.setGranularity(20); para ir de 20, 40, 60
+
+    }
+
+    private void axisRight(YAxis axis){
+        axis.setEnabled(false);
+    }
+
+    public void createCharts() {
+        barChart = (BarChart) getSameChart(barChart, "Series", Color.RED, Color.CYAN, 3000);
+        barChart.setDrawGridBackground(true);
+        barChart.setDrawBarShadow(true);
+        barChart.setData(getBarData());
+        barChart.invalidate();
+        axisX(barChart.getXAxis());
+        axisLeft(barChart.getAxisLeft());
+        axisRight(barChart.getAxisRight());
+        //Para leyenda de colores
+        barChart.getLegend().setEnabled(false);
+    }
+
+    private DataSet getData(DataSet dataSet){
+        dataSet.setColors(colors);
+        dataSet.setValueTextColor(Color.WHITE);
+        dataSet.setValueTextSize(10);
+        return dataSet;
+    }
+
+    private BarData getBarData(){
+        BarDataSet barDataSet = (BarDataSet)getData(new BarDataSet(getBarEntries(),""));
+        barDataSet.setBarShadowColor(Color.GRAY);
+        BarData barData = new BarData(barDataSet);
+        barData.setBarWidth(0.45f);
+        return barData;
+    }
+
+
 
 
 }
