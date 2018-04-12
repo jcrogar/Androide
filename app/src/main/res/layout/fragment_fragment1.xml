@@ -197,11 +197,10 @@
             android:id="@+id/textView87"
             android:layout_width="wrap_content"
             android:layout_height="46dp"
-            android:layout_marginLeft="56dp"
-            android:layout_marginStart="56dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="24dp"
             android:gravity="center"
-            android:text="$"
+            android:text="USD"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -211,24 +210,23 @@
 
         <Button
             android:id="@+id/btnCalcularAct"
-            android:layout_width="96dp"
-            android:layout_height="67dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="85dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/button_file"
             android:backgroundTint="#FBF781"
             android:text="Calcular"
             android:textColor="#37372B"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textTotal"
-            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+            app:layout_constraintStart_toEndOf="@+id/textTotalMejora"
+            app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
 
         <TextView
             android:id="@+id/textTotal"
             android:layout_width="138dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:textColor="@android:color/white"
@@ -287,7 +285,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
+
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -344,7 +343,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -398,17 +397,46 @@
             android:id="@+id/textView92"
             android:layout_width="wrap_content"
             android:layout_height="44dp"
-            android:layout_marginLeft="176dp"
-            android:layout_marginStart="176dp"
+            android:layout_marginStart="70dp"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="$"
+            android:text="USD"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="USD"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Factor B/C"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView93" />
 
         <TextView
             android:id="@+id/textTotalMejora"
@@ -443,29 +471,32 @@
 
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/barChart"
-            android:layout_width="338dp"
-            android:layout_height="161dp"
+            android:layout_width="335dp"
+            android:layout_height="233dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView93" />
+            app:layout_constraintTop_toBottomOf="@+id/textView90">
 
-        <TextView
-            android:id="@+id/textView66"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Yo soy el indicador del Scroll"
-            android:textColor="@android:color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.433"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/barChart" />
+            <TextView
+                android:id="@+id/textTotalMejora2"
+                android:layout_width="103dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView92"
+                app:layout_constraintTop_toBottomOf="@+id/textTiempoMejora" />
+        </com.github.mikephil.charting.charts.BarChart>
 
 
     </android.support.constraint.ConstraintLayout>

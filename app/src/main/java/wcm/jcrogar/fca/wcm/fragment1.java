@@ -44,15 +44,24 @@ import java.util.ArrayList;
  */
 public class fragment1 extends Fragment {
     EditText textGente, textMinutos, textDia, textSemana, textMes, textProblema, textMejora, textTiempoMejora ;
-    TextView textTotal, textTotalMejora;
+    TextView textTotal, textTotalMejora, textFactoBC;
     Button btnCalculatAct;
+    //Button btnGraficar;
+    Double TotalMejora;
+    Double calculoSemana;
+    Double calculoDia;
+    Double calculoMes;
 
     //Variables para Graficar
     private BarChart barChart;
-    private  String[]months = new String[] {"Enero","Febrero","Marzo","Abril","Mayo"};
-    private int[]sale = new int[]{25,20,38,15};
-    private int[]colors = new int[]{Color.BLACK,Color.RED,Color.GREEN,Color.BLUE, Color.GRAY};
+    private  String[]months = new String[] {"Costo Total","Beneficio Total"};
+    //private Double[]sale = new Double[]{25.0,20.0};
+    //private int[]sale = new int[]{10,20};
+    private int[]sale = new int[2];
+    private int[]colors = new int[]{Color.BLACK,Color.RED};
     //Variables para Graficar
+
+
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,20 +86,30 @@ public class fragment1 extends Fragment {
         textMes = (EditText) v.findViewById(R.id.textMes);
         textTotal = (TextView) v.findViewById(R.id.textTotal);
         btnCalculatAct = (Button)v.findViewById(R.id.btnCalcularAct);
+       // textFactoBC = (TextView) v.findViewById(R.id.textFactorBC);
+        //btnGraficar = (Button) v.findViewById(R.id.btnGraficar);
+
         textTiempoMejora.setFocusable(false);
         textTiempoMejora.setEnabled(false);
         textTiempoMejora.setCursorVisible(false);
         textTiempoMejora.setKeyListener(null);
         //Llamada a la creacion de la grafica
-        createCharts();
+        //createCharts();
 
-
+       /* btnGraficar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                createCharts();
+            }
+        });*/
 
         btnCalculatAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validar();
                 calcularCosto();
+                createCharts();
+                //calcularBC();
+
             }
         });
         return v;
@@ -102,7 +121,6 @@ public class fragment1 extends Fragment {
 
     public void validar()
     {
-
         if (textDia.getText().toString().length() == 0  && textSemana.getText().toString().length()==0 && textMes.getText().toString().length() == 0)
         {
             Toast toast1 = Toast.makeText(getActivity(),"Ingrese Datos en Dia, Semana o Mes", Toast.LENGTH_LONG);
@@ -110,10 +128,14 @@ public class fragment1 extends Fragment {
             toast1.show();
             textTotal.setText("0.00");
         }
-
         else if (textDia.getText().toString().length() == 0 && textSemana.getText().toString().length() == 0)
             {
                 calcularMes();
+                //double factor =  calculoMes/TotalMejora;
+                //String factorBC = String.format("%.2f",factor);
+                //textFactoBC.setText(factorBC);
+
+
             }
         else if (textSemana.getText().toString().length() == 0 && textMes.getText().toString().length() == 0)
             {
@@ -133,10 +155,15 @@ public class fragment1 extends Fragment {
         Double numGente = Double.parseDouble(valorGente);
         Double numMinuto = Double.parseDouble(valorMinutos);
         Double numSemana = Double.parseDouble(valorSemana);
-        Double calculoSemana;
+        // calculoSemana;
         calculoSemana = numGente * numMinuto * (6.94 / 60) * numSemana * 46;
         String semana = String.format("%.2f",calculoSemana);
         textTotal.setText(semana);
+
+        int aux = calculoSemana.intValue();
+
+        sale[1] = aux;
+
     }
 
     public void calcularMes()
@@ -147,10 +174,14 @@ public class fragment1 extends Fragment {
         Double numGente = Double.parseDouble(valorGente);
         Double numMinuto = Double.parseDouble(valorMinutos);
         Double numMes = Double.parseDouble(valorMes);
-        Double calculoMes;
+        //Double calculoMes;
         calculoMes = numGente * numMinuto * (6.94 / 60) * numMes * 12;
         String Mes = String.format("%.2f",calculoMes);
         textTotal.setText(Mes);
+
+        int aux = calculoMes.intValue();
+
+        sale[1] = aux;
 
     }
 
@@ -162,10 +193,14 @@ public class fragment1 extends Fragment {
       Double numGente = Double.parseDouble(valorGente);
       Double numMinuto = Double.parseDouble(valorMinutos);
       Double numDia = Double.parseDouble(valorDia);
-      Double calculoDia;
+      //Double calculoDia;
       calculoDia = numGente * numMinuto * (6.94 / 60) * numDia * 322;
       String dia = String.format("%.2f",calculoDia);
       textTotal.setText(dia);
+
+      int aux = calculoDia.intValue();
+
+      sale[1] = aux;
   }
 
   public void calcularCosto()
@@ -183,17 +218,50 @@ public class fragment1 extends Fragment {
           Double numProblema = Double.parseDouble(valorProblema);
           Double numMejora = Double.parseDouble(valorMejora);
           Double CalculoMejora;
-          Double TotalMejora;
+        //  Double TotalMejora;
           CalculoMejora = numProblema + numMejora;
           TotalMejora = CalculoMejora * 0.12;
           String Total = String.format("%.2f", TotalMejora);
           String mejora = String.format("%.2f", CalculoMejora);
           textTiempoMejora.setText(mejora);
           textTotalMejora.setText(Total);
+
+
+          //int totalM = Integer.parseInt(Total);
+       //  int aux = TotalMejora.intValue();
+       //  sale[0] = aux;
+         //sale[1] = 2;
+
           }
   }
+//No funciona el Calculo BC
 
-  //Creando la Grafica
+  /*public  void calcularBC(){
+      if (textDia.getText().toString().length() == 0 && textSemana.getText().toString().length() == 0)
+      {
+
+          double factor1 = calculoMes/TotalMejora;
+          String factorBC1 = String.format("%.2f",factor1);
+          textFactoBC.setText(factorBC1);
+
+
+      }
+      else if (textSemana.getText().toString().length() == 0 && textMes.getText().toString().length() == 0)
+      {
+          double factor2 = calculoMes/TotalMejora;
+          String factorBC2 = String.format("%.2f",factor2);
+          textFactoBC.setText(factorBC2);
+      }
+      else if (textDia.getText().toString().length() == 0 && textMes.getText().toString().length() == 0)
+      {
+          double factor3 = calculoMes/TotalMejora;
+          String factorBC3 = String.format("%.2f",factor3);
+          textFactoBC.setText(factorBC3);
+      }
+  }*/
+
+
+  ////////////////////Creando la Grafica////////////////////
 
     private Chart getSameChart(Chart chart, String description, int textColor, int background, int animateY  ){
         chart.getDescription().setText(description);
@@ -220,10 +288,42 @@ public class fragment1 extends Fragment {
 
     }
 
+        //MEtodo para llenar los datos del arreglo
     private ArrayList<BarEntry>getBarEntries(){
+        if (textDia.getText().toString().length() == 0 && textSemana.getText().toString().length() == 0)
+        {
+            int aux1 = calculoMes.intValue();
+            sale[1] = aux1;
+        }
+        else if (textSemana.getText().toString().length() == 0 && textMes.getText().toString().length() == 0)
+        {
+            int aux2 = calculoDia.intValue();
+            sale[1] = aux2;
+        }
+        else if (textDia.getText().toString().length() == 0 && textMes.getText().toString().length() == 0)
+        {
+            int aux3 = calculoSemana.intValue();
+            sale[1] = aux3;
+        }
+
+
+
+        int aux = TotalMejora.intValue();
+        sale[0] = aux;
+        //String valorTotal = textTotal.getText().toString();
+        //int total = Integer.parseInt(valorTotal);
+      // sale[0] = 5;
+       // sale[1] = 10;
+
         ArrayList<BarEntry> entries = new ArrayList<>();
         for (int i = 0; i<sale.length; i++)
+
             entries.add(new BarEntry(i,sale[i]));
+
+
+        /*for (int i = 0; i<sale.length; i++)
+            entries.add(new BarEntry(i,sale[i]));
+        */
 
 
         return entries;
@@ -249,7 +349,7 @@ public class fragment1 extends Fragment {
     }
 
     public void createCharts() {
-        barChart = (BarChart) getSameChart(barChart, "Series", Color.RED, Color.CYAN, 3000);
+        barChart = (BarChart) getSameChart(barChart, " ", Color.DKGRAY, Color.BLUE, 3000);
         barChart.setDrawGridBackground(true);
         barChart.setDrawBarShadow(true);
         barChart.setData(getBarData());
